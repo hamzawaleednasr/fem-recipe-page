@@ -119,3 +119,20 @@ li {
   border-bottom: 1px solid #ddd;
   padding: 0.75;
 }
+@media (min-width: 767px) {
+  body {
+    padding: 4rem 20%;
+  }
+  .recipe {
+    border-radius: 1rem;
+    padding: 1.75rem;
+  }
+  .recipe figure {
+    margin-bottom: 1.25rem;
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+  .recipe .content {
+    padding: 0;
+  }
+}
