@@ -33,7 +33,7 @@ body {
 li {
   color: var(--stone-600);
   font-size: 1.2rem;
-  padding-left: 1rem; 
+  padding-left: 1.1rem; 
 }
 .recipe {
   background-color: var(--white);
@@ -82,5 +82,40 @@ li {
   color: var(--rose-800);
 }
 .recipe .content .intro .preparation-time ul li span {
+  font-weight: 700;
+}
+.recipe .content .instructions li {
+  line-height: 1.75;
+}
+.recipe .content .instructions li span {
+  font-weight: 700;
+}
+.recipe .content :where(.ingredients, .instructions) li::marker {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+.recipe .content .nutrition .title {
+  margin: 1rem 0;
+}
+.recipe .content .nutrition table {
+  width: 100%;
+}
+.recipe .content .nutrition table caption {
+  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--stone-600);
+}
+.recipe .content .nutrition table td.tag {
+  color: var(--stone-600);
+}
+.recipe .content .nutrition table td:not(.tag) {
+  color: var(--brown-800);
   font-weight: 600;
+}
+.recipe .content .nutrition table td {
+  padding: 0.5rem;
+}
+.recipe .content .nutrition table tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75;
 }
